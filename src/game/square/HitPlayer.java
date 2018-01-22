@@ -8,7 +8,7 @@ public class HitPlayer {
         Player player = GameObjectManager.instance.checkCollider(square.getBoxCollider(), Player.class);
         if (player != null) {
             System.out.println("hit");
-            player.getHit();
+//            player.getHit();
             square.getHit();
         }
     }

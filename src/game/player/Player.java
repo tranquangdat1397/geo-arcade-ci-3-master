@@ -26,7 +26,7 @@ public class Player extends GameObject implements PhysicBody {
         );
         this.renderer = this.imageRenderer;
         this.playerShoot = new PlayerShoot();
-        this.playerHealth = new PlayerHealth(5);
+//        this.playerHealth = new PlayerHealth(5);
         this.boxCollider = new BoxCollider(40, 40);
     }
 
@@ -38,12 +38,12 @@ public class Player extends GameObject implements PhysicBody {
         this.playerShoot.run(this);
     }
 
-    public void getHit() {
-        this.isAlive = this.playerHealth.run();
-        if (this.isAlive) {
-            this.renderer = this.animationRenderer;
-        }
-    }
+//    public void getHit() {
+//        this.isAlive = this.playerHealth.run();
+//        if (this.isAlive) {
+//            this.renderer = this.animationRenderer;
+//        }
+//    }
 
     @Override
     public BoxCollider getBoxCollider() {

@@ -23,5 +23,17 @@ public class MouseMotionInput implements MouseMotionListener {
     @Override
     public void mouseMoved(MouseEvent e) {
         this.position.set(e.getX(), e.getY());
+        if(this.position.x>360) {
+            this.position.x=360;
+        }
+        if(this.position.x<20){
+            this.position.x=20;
+        }
+        if(this.position.y > 540){
+            this.position.y = 540;
+        }
+        if (this.position.y < 0){
+            this.position.y = 0;
+        }
     }
 }
