@@ -1,0 +1,32 @@
+[
+  {
+    "action": ["shoot"]
+  },
+  {
+    "action": ["square"]
+  },
+  {
+    "action": ["circle"]
+  },
+  {
+    "action": ["shoot", "square"]
+  },
+  {
+    "action": ["shoot", "circle"]
+  },
+  {
+    "action": ["circle", "square"]
+  },
+  {
+    "action": ["wall"]
+  },
+  {
+    "action": ["wall", "shoot"]
+  },
+  {
+    "action": ["wall", "square"]
+  },
+  {
+    "action": ["wall", "circle"]
+  }
+]
